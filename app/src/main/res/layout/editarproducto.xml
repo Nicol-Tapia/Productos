@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarproductoActivity">
+
+    <TextView
+        android:id="@+id/editarproducto"
+        android:layout_width="411dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="331dp"
+        android:background="@color/light_blue"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/editar_producto"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textDirection="locale"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/LugarCompra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/NombreProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/NombreProducto"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Cantidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/cantidad"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Precio"
+        app:layout_constraintStart_toStartOf="@+id/NombreProducto" />
+
+    <EditText
+        android:id="@+id/Precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/precio"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/LugarCompra"
+        app:layout_constraintStart_toStartOf="@+id/Cantidad" />
+
+    <EditText
+        android:id="@+id/LugarCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/lugar_de_compra"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/guardarEdicion"
+        app:layout_constraintStart_toStartOf="@+id/Precio"
+        app:layout_constraintTop_toBottomOf="@+id/editarproducto" />
+
+    <Button
+        android:id="@+id/guardarEdicion"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="147dp"
+        android:backgroundTint="#2AA6DE"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/guardarEdicion"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LugarCompra" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
